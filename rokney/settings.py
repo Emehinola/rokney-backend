@@ -26,7 +26,7 @@ SECRET_KEY = os.environ['ROKNEY-SECRET-KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.0.2.2', '127.0.0.1', '192.168.43.112']
+ALLOWED_HOSTS = ['10.0.2.2', '127.0.0.1', '192.168.43.112', '100.107.163.80']
 
 
 # Application definition
@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'graphql_jwt.refresh_token.apps.RefreshTokenConfig',  # refresh tokens
     'graphql_auth',
     'django_filters',
-    'users_account'
+    'users_account',
+    'post'
 ]
 
 MIDDLEWARE = [
